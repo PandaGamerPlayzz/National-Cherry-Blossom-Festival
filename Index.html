@@ -1,0 +1,107 @@
+<!-- By Zachary A. Miller -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="/js/Main.js"></script>
+
+        <link type="text/css" href="/css/Main.css" rel="stylesheet">
+        <link type="text/css" href="/css/Home.css" rel="stylesheet">
+
+        <title>National Cherry Blossoms Festival</title>
+    </head>
+    <body>
+        <div data-include="/res/components/Navigation.html"></div>
+        <section id="cover">
+            <div id="cover-img">
+                <img id="img-01-bg" style="transform: scaleX(-1);" src="https://photos.smugmug.com/Press-Images/2022/n-8wvXwk/i-wdhn2xD/0/9241029b/XL/i-wdhn2xD-XL.jpg" alt="Untitled photo">
+                <h1 id="blurb-circle-title">Welcome!</h1>
+                <p id="blurb-circle-text">&emsp;The Cherry Blossom Festival features a variety of online events to celebrate spring in our nation's capital! From hands-on activites for kids to the Pink Tie Dinner Party for adults, you'll find an event you can enjoy. Explore!</p>
+                <div id="cover-img-blurb-circles">
+                    <div id="cover-img-blurb-circle-a" class="cover-img-blurb-circle">
+                        <div id="cover-img-blurb-circle-b" class="cover-img-blurb-circle">
+                            <div id="circle-b-edge-cover"></div>
+                        </div>
+                        <div id="cover-img-blurb-circle-c" class="cover-img-blurb-circle">
+                            <div id="circle-c-bottom-cover"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="search">
+                <div id="search-button" onclick="onSearchClick()">
+                    <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50" style=" fill:#000000;"><path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path></svg>
+                </div>
+                <div id="search-bar" class="search-active">
+                    <span id="search-bar-x" onclick="onSearchClick()">&#x2715;</span>
+                    <input id="search-bar-text-box" name="search-bar-text-box" placeholder="Search..." type="text">
+                    <span id="search-bar-enter" onclick="onEnterClick()">&#11166;</span>
+                </div>
+            </div>
+        </section>
+        <section id="links">
+            <div class="c3-grid">
+                <div class="c3-grid-item">
+                    <a href="/Welcome-Area/"><img class="c3-grid-image" src="https://photos.smugmug.com/Press-Images/2022/n-8wvXwk/i-3nnFkCB/0/282a5206/X2/i-3nnFkCB-X2.jpg" alt="Untitled photo"></a>
+                    <a class="c3-grid-image-attribution official-ncbf-attribution" href="https://nationalcherryblossomfestival.org/press-images/" target="_blank"><i>Image Courtesy of The National Cherry Blossom Festival</i></a>
+                    <a href="/Welcome-Area/"><h2 class="c3-grid-headline">Welcome Area</h2></a>
+                    <p class="c3-grid-p" data-replace="/Welcome-Area/ [data-search-description]"></p>
+                    <a href="/Welcome-Area/" class="c3-grid-learn-more">Learn more ></a>
+                </div>
+                <div id="c3-grid-opening-ceremony" class="c3-grid-item">
+                    <a href="/Opening-Ceremony/"><img class="c3-grid-image" src="https://photos.smugmug.com/Press-Images/2022/n-8wvXwk/i-PLMfPZN/0/ff1e147d/XL/i-PLMfPZN-XL.jpg" alt="Untitled photo"></a>
+                    <a class="c3-grid-image-attribution official-ncbf-attribution" href="https://nationalcherryblossomfestival.org/press-images/" target="_blank"><i>Image Courtesy of The National Cherry Blossom Festival</i></a>
+                    <a href="/Opening-Ceremony/"><h2 class="c3-grid-headline">Opening Ceremony</h2></a>
+                    <p class="c3-grid-p" data-replace="/Opening-Ceremony/ [data-search-description]"></p>
+                    <a href="/Opening-Ceremony/" class="c3-grid-learn-more">Learn more ></a>
+                </div>
+                <div class="c3-grid-item">
+                    <a href="/Peak-Blossom-Calendar/"><img class="c3-grid-image" src="https://photos.smugmug.com/Press-Images/2022/n-8wvXwk/i-dnck7Lp/0/3a8724c8/XL/i-dnck7Lp-XL.jpg" alt="Untitled photo"></a>
+                    <a class="c3-grid-image-attribution official-ncbf-attribution" href="https://nationalcherryblossomfestival.org/press-images/" target="_blank"><i>Image Courtesy of The National Cherry Blossom Festival</i></a>
+                    <a href="/Peak-Blossom-Calendar/"><h2 class="c3-grid-headline">Peak Blossom Calendar</h2></a>
+                    <p class="c3-grid-p" data-replace="/Peak-Blossom-Calendar/ [data-search-description]"></p>
+                    <a href="/Peak-Blossom-Calendar/" class="c3-grid-learn-more">Learn more ></a>
+                </div>
+                <div id="c3-grid-history" class="c3-grid-item">
+                    <a href="/History/"><img class="c3-grid-image" src="https://photos.smugmug.com/Press-Images/2022/n-8wvXwk/i-VhJk4nj/0/da791541/XL/i-VhJk4nj-XL.jpg" alt="Untitled photo"></a>
+                    <a class="c3-grid-image-attribution official-ncbf-attribution" href="https://nationalcherryblossomfestival.org/press-images/" target="_blank"><i>Image Courtesy of The National Cherry Blossom Festival</i></a>
+                    <a href="/History/"><h2 class="c3-grid-headline">History</h2></a>
+                    <p class="c3-grid-p">&emsp;The wonderful Cherry Blossom Festival began with a gift in 1912. From generous acts of gifts and support, this sensational celebration emerged. Please enjoy the festival, and as you do, keep in mind the cultural significance of the cherry blossom trees that bring us together each year.</p>
+                    <a href="/History/" class="c3-grid-learn-more">Learn more ></a>
+                </div>
+                <div id="c3-grid-pink-tie-dinner-party" class="c3-grid-item">
+                    <a href="/Pink-Tie-Dinner-Party/"><img class="c3-grid-image" src="https://photos.smugmug.com/Press-Images/2022/n-8wvXwk/i-bMT4T7v/0/28c32c20/XL/i-bMT4T7v-XL.jpg" alt="Cherry Clafoutis by TCMA, Photo by Jay Snap | LaDexon Photographie, National Cherry Blossom Festival, Pink Tie Party, Ronald Reagan Building, March 22, 2019"></a>
+                    <a class="c3-grid-image-attribution official-ncbf-attribution" href="https://nationalcherryblossomfestival.org/press-images/" target="_blank"><i>Image Courtesy of The National Cherry Blossom Festival</i></a>
+                    <a href="/Pink-Tie-Dinner-Party/"><h2 class="c3-grid-headline">Pink Tie Dinner Party</h2></a>
+                    <p class="c3-grid-p" data-replace="/Pink-Tie-Dinner-Party/ [data-search-description]"></p>
+                    <a href="/Pink-Tie-Dinner-Party/" class="c3-grid-learn-more">Learn more ></a>
+                </div>
+                <div id="c3-grid-petalpalooza" class="c3-grid-item">
+                    <a href="/Petalpalooza/"><img class="c3-grid-image" src="https://photos.smugmug.com/Press-Images/2022/n-8wvXwk/i-HqxWjmz/0/bb575bcf/XL/i-HqxWjmz-XL.jpg" alt="Untitled photo"></a>
+                    <a class="c3-grid-image-attribution official-ncbf-attribution" href="https://nationalcherryblossomfestival.org/press-images/" target="_blank"><i>Image Courtesy of The National Cherry Blossom Festival</i></a>
+                    <a href="/Petalpalooza/"><h2 class="c3-grid-headline">Petalpalooza</h2></a>
+                    <p class="c3-grid-p" data-replace="/Petalpalooza/ [data-search-description]"></p>
+                    <a href="/Petalpalooza/" class="c3-grid-learn-more">Learn more ></a>
+                </div>
+                <div class="c3-grid-item">
+                    <a href="/Petalpalooza/Activities-For-Kids/"><img class="c3-grid-image" src="https://photos.smugmug.com/Press-Images/2022/n-8wvXwk/i-mHFqHfQ/0/18116433/S/i-mHFqHfQ-S.jpg" alt="Untitled photo"></a>
+                    <a class="c3-grid-image-attribution official-ncbf-attribution" href="https://nationalcherryblossomfestival.org/press-images/" target="_blank"><i>Image Courtesy of The National Cherry Blossom Festival</i></a>
+                    <a href="/Petalpalooza/Activities-For-Kids/"><h2 class="c3-grid-headline">Activities for Kids</h2></a>
+                    <p class="c3-grid-p" data-replace="/Petalpalooza/Activities-For-Kids/ [data-search-description]"></p>
+                    <a href="/Petalpalooza/Activities-For-Kids/" class="c3-grid-learn-more">Learn more ></a>
+                </div>
+                <div id="c3-grid-competitions" class="c3-grid-item">
+                    <a href="/Competitions/"><img class="c3-grid-image" src="https://images.unsplash.com/photo-1571849291280-89f81a772893?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Untitled photo"></a>
+                    <a class="c3-grid-image-attribution" href="https://unsplash.com/photos/uCyX_xn8Y1I" target="_blank"><i>Image Courtesy of Unsplash</i></a>
+                    <a href="/Competitions/"><h2 class="c3-grid-headline">Competition Overview</h2></a>
+                    <p class="c3-grid-p" data-replace="/Competitions/ [data-search-description]"></p>
+                    <p class="c3-grid-p">See the <a href="/Competitions/?a=kite">rules and registration information</a> for the DIY kite contest as well as the <a href="/Competitions/?a=porch-decoration">rules and registration information</a> for the porch decoration contest.</p>
+                    <a href="/Competitions/" class="c3-grid-learn-more">Learn more ></a>
+                </div>
+            </div>
+        </section>
+        </body>
+        <div data-include="/res/components/Footer.html"></div>
+    </body>
+</html>

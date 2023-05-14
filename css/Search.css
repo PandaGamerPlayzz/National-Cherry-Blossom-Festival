@@ -1,0 +1,53 @@
+/* By Zachary A. Miller */
+
+#loaded-content {
+    display: none;
+}
+
+.result-hidden {
+    display: none;
+}
+
+#results-for-title {
+    margin-top: 10vw;
+    margin-bottom: 6.75vw;
+    text-align: center;
+    font-family: 'Water Brush', cursive;
+    color: var(--global-c-400);
+    font-size: 4vw;
+}
+
+#search-results {
+    margin-bottom: 25vh;
+}
+
+.search-result {
+    position: relative;
+    margin: 1.7vw;
+    width: 70vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.search-result-title {
+    margin-bottom: 1vw;
+    font-size: 2.6vw;
+    font-family: 'Signika Negative', sans-serif;
+    color: var(--global-t-500);
+}
+
+.search-result-title-url {
+    text-decoration: none;
+}
+
+.search-result-description {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.search-result-url {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.search-result-score {
+    display: none;
+}

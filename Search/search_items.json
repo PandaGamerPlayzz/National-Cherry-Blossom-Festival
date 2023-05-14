@@ -1,0 +1,129 @@
+{
+    "/History/": {
+        "tags": {
+            "history": 3, 
+            "first": 3, 
+            "festival": 3, 
+            "tidal": 2, 
+            "basin": 2, 
+            "japan": 2, 
+            "japanese": 2, 
+            "cherry": 3, 
+            "blossom": 3, 
+            "lantern": 3
+        }
+    },
+    "/Competitions/": {
+        "tags": {
+            "rules": 3,
+            "adult": 3,
+            "children": 3,
+            "youth": 3,
+            "register": 3,
+            "diy": 3,
+            "kite": 3,
+            "kites": 3,
+            "porch": 3,
+            "decoration": 3,
+            "decorations": 3,
+            "festival": 2,
+            "judging": 2,
+            "prize": 2,
+            "prizes": 2
+        }
+    },
+    "/Competitions/?a=kite": {
+        "title": "Kite Competition",
+        "search_description": "[data-search-kite-description]",
+        "tags": {
+            "rules": 2,
+            "adult": 2,
+            "children": 2,
+            "youth": 2,
+            "register": 2,
+            "diy": 4,
+            "kite": 4,
+            "kites": 4,
+            "festival": 1,
+            "judging": 1,
+            "prize": 1,
+            "prizes": 1
+        }
+    },
+    "/Competitions/?a=porch-decoration": {
+        "title": "Porch Decoration Competition",
+        "tags": {
+            "rules": 2,
+            "adult": 2,
+            "children": 2,
+            "youth": 2,
+            "register": 2,
+            "porch": 4,
+            "decoration": 4,
+            "decorations": 4,
+            "festival": 1,
+            "judging": 1,
+            "prize": 1,
+            "prizes": 1
+        }
+    },
+    "/Pink-Tie-Dinner-Party/": {
+        "tags": {
+            "pink": 2,
+            "tie": 3,
+            "dinner": 4,
+            "party": 3
+        }
+    },
+    "/Petalpalooza/": {
+        "tags": {
+            "petalpalooza": 4
+        }
+    },
+    "/Petalpalooza/Activities-For-Kids/": {
+        "tags": {
+            "petalpalooza": 3,
+            "origami": 4,
+            "kid": 3,
+            "kids": 3,
+            "activities": 2
+        }
+    },
+    "/Petalpalooza/Performances/": {
+        "tags": {
+            "petalpalooza": 3,
+            "performance": 4,
+            "performances": 4
+        }
+    },
+    "/Peak-Blossom-Calendar/": {
+        "tags": {
+            "peak": 2,
+            "blossom": 2,
+            "calendar": 4,
+            "time": 2,
+            "times": 3
+        }
+    },
+    "/Opening-Ceremony/": {
+        "tags": {
+            "open": 2,
+            "opening": 2,
+            "ceremony": 4
+        }
+    },
+    "/Welcome-Area/": {
+        "tags": {
+            "welcome": 3,
+            "area": 3
+        }
+    },
+    "/References/": {
+        "tags": {
+            "references": 4,
+            "cite": 4,
+            "citations": 4,
+            "resources": 2
+        }
+    }
+}

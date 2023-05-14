@@ -1,0 +1,30 @@
+/* By Zachary A. Miller */
+
+.earthcam-embed-container > iframe {
+    border-radius: 20px;
+}
+
+.google-calendar-embed-container, .earthcam-embed-container {
+    position: relative;
+    overflow: hidden;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-top: 7.5vw;
+    width: 60vw;
+    height: 33.75vw;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.google-calendar-embed-container {
+    margin-top: 2.3vw;
+}
+
+.earthcam-embed-container {
+    overflow: auto;
+}
+
+.google-calendar-embed-container > iframe {
+    border-radius: 20px;
+}

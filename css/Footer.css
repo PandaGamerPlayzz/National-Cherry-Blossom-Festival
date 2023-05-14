@@ -1,0 +1,104 @@
+/* By Zachary A. Miller */
+
+:root {
+    --footer-height: 45vh;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: var(--footer-height);
+}
+
+#footer {
+    margin-top: auto;
+    z-index: 100;
+}
+
+#footer-container {
+    position: absolute;
+    width: 100%;
+    height: var(--footer-height);
+    left: 0;
+    bottom: 0%;
+    background-color: var(--global-c-400);
+    box-shadow: 0 0 35px rgb(10 36 88 / 25%);
+}
+
+#blossom-phrase {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    width: 100%;
+    font-size: 3vw;
+    font-family: 'Reenie Beanie', cursive;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--global-c-450);
+}
+
+.footer-menu {
+    position: relative;
+}
+
+.footer-menu-column {
+    float: left;
+    margin-top: 0.75vw;
+    width: calc((1/4) * 100%);
+}
+
+.footer-menu-column a {
+    display: inline-block;
+    width: calc(100% - 4.5vh);
+    margin-top: 1vh;
+    margin-left: 4.5vh;
+    font-size: 1.65vw;
+    font-family: 'Signika Negative', sans-serif;
+    text-decoration: none;
+    color: var(--global-t-200);
+    transition: 0.15s;
+}
+
+.footer-menu-column > div {
+    margin-left: 3.5vh;
+}
+
+.footer-menu-column > div > a {
+    width: calc(100% - 8vh);
+}
+
+.footer-menu-column-line {
+    display: none;
+    position: absolute;
+    height: 60%;
+    width: 0.1vw;
+    background-color: var(--global-c-300);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#footer-menu-column-line-a {
+    left: 25%;
+}
+
+#footer-menu-column-line-b {
+    left: 50%;
+}
+
+#footer-menu-column-line-c {
+    left: 75%;
+}
+
+#footer-attribution {
+    position: absolute;
+    left: 0;
+    bottom: 2vw;
+    width: 100%;
+    text-align: center;
+    font-size: 1.65vw;
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+}
+
+#footer-attribution > a {
+    color: inherit;
+}

@@ -1,0 +1,143 @@
+/* By Zachary A. Miller */
+
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+:root {
+    --global-t-200: #FFFFFF;
+    --global-t-400: #7A7A7A;
+    --global-t-500: #000000;
+    --global-c-200: #FFFFFF;
+    --global-c-250: #E8E8E8;
+    --global-c-300: #C2C2C2;
+    --global-c-400: #F17EB1;
+    --global-c-450: #e96ea5;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    background: none;
+    border: none;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 4vw;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.carousel-button:hover, .carousel-button:focus {
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-button:focus {
+    outline: 1px solid #000000;
+}
+
+.carousel-button.previous {
+    left: 0.75vw;
+}
+
+.carousel-button.next {
+    right: 0.75vw;
+}
+
+.carousel-attribution {
+    position: absolute;
+    top: calc(100% + 0.5vw);
+    right: 0;
+    font-size: 1.2vw;
+    color: var(--global-t-400);
+    transition: 0.15s;
+}
+
+.video-attribution {
+    position: absolute;
+    top: calc(100% + 0.2vw);
+    right: 3.5vw;
+    font-size: 1.2vw;
+    color: var(--global-t-400);
+    transition: 0.15s;
+}
+
+.title {
+    position: relative;
+    margin-top: 10vw;
+    width: 100%;
+    text-align: center;
+    font-family: 'Water Brush', cursive;
+    color: var(--global-c-400);
+    font-size: 4vw;
+}
+
+.subtitle {
+    position: relative;
+    margin-top: 6.5vw;
+    width: 100%;
+    text-align: center;
+    font-family: 'Water Brush', cursive;
+    color: var(--global-c-400);
+    font-size: 3.35vw;
+}
+
+.section-container {
+    position: relative;
+    width: 70vw;    
+    left: 50%;
+    margin-top: 3.5vw;
+    margin-bottom: 5vw;
+    transform: translateX(-50%);
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.7vw;
+}
+
+.section-container > p, .section-container > ol, .section-container > ul {
+    margin-top: 1vw;
+}
+
+.section-container ul, .section-container ol {
+    margin-left: 3vw;
+}
+
+.official-ncbf-attribution {
+    display: none;
+}

@@ -1,0 +1,32 @@
+<!-- By Zachary A. Miller -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="/js/Main.js"></script>
+        <script src="/js/Search.js"></script>
+
+        <link type="text/css" href="/css/Main.css" rel="stylesheet">
+        <link type="text/css" href="/css/Search.css" rel="stylesheet">
+
+        <title>Search Results | National Cherry Blossoms Festival</title>
+    </head>
+    <body>
+        <div data-include="/res/components/Navigation.html"></div>
+        <template id="search-result-template">
+            <div class="search-result">
+                <a class="search-result-title-url" href="/"><h1 class="search-result-title" data-result-title>Template</h1></a>
+                <p class="search-result-description" data-result-description>Description</p>
+                <a class="search-result-url" data-result-url href="/">URL</a>
+                <span class="search-result-score" data-result-score>(0)</span>
+            </div>
+        </template>
+        <h1 id="results-for-title"></h1>
+        <section id="search-results">
+            
+        </section>
+        <div data-include="/res/components/Footer.html"></div>
+        <span id="loaded-content"></span>
+    </body>
+</html>

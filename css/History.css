@@ -1,0 +1,51 @@
+/* By Zachary A. Miller */
+
+.history {
+    position: relative;
+    width: 70vw;    
+    left: 50%;
+    margin-top: 3.5vw;
+    margin-bottom: 10vw;
+    transform: translateX(-50%);
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.7vw;
+}
+
+#history-01 > p {
+    margin-top: 1vw;
+}
+
+#image-01 {
+    float: right;
+    text-align: center;
+}
+
+#image-01-it {
+    position: relative;
+    margin: 0.5vw;
+    margin-bottom: -1vw;
+}
+
+#image-01-it .attribution {
+    position: absolute;
+    bottom: 1vw;
+    right: 0.7vw;
+    font-size: 0.8vw;
+    color: var(--global-t-200);
+    transition: 0.15s;
+    z-index: 98;
+}
+
+#image-01-it .attribution a {
+    color: inherit;
+}
+
+#image-01 img {
+    height: 30vw;
+    border-radius: 20px;
+}
+
+#image-01-caption {
+    margin-bottom: 0.5vw;
+    color: var(--global-t-400);
+}

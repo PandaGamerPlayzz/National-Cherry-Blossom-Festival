@@ -1,0 +1,54 @@
+<!-- By Zachary A. Miller -->
+
+<section id="navigation">
+    <link type="text/css" href="/css/Navigation.css" rel="stylesheet">
+    <nav id="nav-bar">
+        <h1 id="nav-logo"><a href="/">National Cherry Blossom Festival</a></h1>
+        <img id="nav-cherry-blossom-icon-a" src="/res/images/cherry-blossom-icon-900x900.png">
+        <img id="nav-cherry-blossom-icon-b" src="/res/images/cherry-blossom-icon-900x900.png">
+        <div id="nav-search">
+            <div id="search-button" onclick="onSearchClick()">
+                <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50" style=" fill:#000000;"><path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path></svg>
+            </div>
+            <div id="search-bar">
+                <span id="search-bar-x" onclick="onSearchClick()">&#x2715;</span>
+                <input id="search-bar-text-box" class="search-inactive" name="search-bar-text-box" type="text">
+                <span id="search-bar-enter" onclick="onEnterClick()">&#11166;</span>
+            </div>
+        </div>
+        <div id="nav-menu" onclick="toggleMenu()"><h1>Menu</h1></div>
+    </nav>
+    <div id="menu-dropdown-container">
+        <div id="menu-dropdown">
+            <div class="menu-column">
+                <a href="/">Home</a>
+                <a href="/Peak-Blossom-Calendar/">Peak Blossom Calendar</a>
+                <a href="/History/">History</a>
+                <a href="/References/">References</a>
+            </div>
+            <div id="menu-column-line-a" class="menu-column-line"></div>
+            <div class="menu-column">
+                <a href="/Opening-Ceremony/">Opening Ceremony</a>
+                <a href="/Welcome-Area/">Welcome Area</a>
+                <a href="/Pink-Tie-Dinner-Party/">Pink Tie Dinner Party</a>
+            </div>
+            <div id="menu-column-line-b" class="menu-column-line"></div>
+            <div class="menu-column">
+                <a href="/Petalpalooza/">Petalpalooza</a>
+                <div class="menu-subpages">
+                    <a href="/Petalpalooza/Activities-For-Kids/">Activites for Kids</a>
+                    <a href="/Petalpalooza/Performances/">Performances</a>
+                </div>
+            </div>
+            <div id="menu-column-line-c" class="menu-column-line"></div>
+            <div class="menu-column">
+                <a href="/Competitions/">Competitions</a>
+                <div class="menu-subpages">
+                    <a href="/Competitions/?a=kite">DIY Kite</a>
+                    <a href="/Competitions/?a=porch-decoration">Porch Decoration</a>
+                </div>
+            </div>
+        </div>
+        <div id="menu-click-off"></div>
+    </div>
+</section>
